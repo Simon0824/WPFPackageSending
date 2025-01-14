@@ -33,7 +33,7 @@ namespace WpfApp5
             }
             else if (pocztowka.IsChecked == true)
             {
-                cena.Text = "Cena: 1zl";
+                cena.Text = "Cena: 1zl"; 
             }
         }
     }
