@@ -15,9 +15,9 @@
             </StackPanel>
         </GroupBox>
         <Button x:Name="sprawdz" Content="Sprawdź cenę" HorizontalAlignment="Left" Margin="25,179,0,0" VerticalAlignment="Top" Width="212" Click="sprawdz_Click"/>
-        <Image x:Name="zdj" HorizontalAlignment="Left" Height="64" Margin="63,246,0,0" VerticalAlignment="Top" Width="100" Source="/plik.JPG"/>
+        <Image x:Name="zdj" HorizontalAlignment="Left" Height="64" Margin="63,246,0,0" VerticalAlignment="Top" Width="69" Source="/plik.png"/>
         <TextBlock x:Name="cena" FontWeight="Bold" HorizontalAlignment="Left" Margin="200,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"><Run Language="pl-pl" Text="Cena: "/></TextBlock>
-        <Button x:Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Width="524" Click="Button_Click"/>
+        <Button x:Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Width="524" Click="zatwierdz_Click" />
         <GroupBox Header="Dane adresowe" Margin="363,21,37,196">
             <StackPanel>
                 <TextBlock x:Name="ulicalabel" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Ulica z numerami" Height="23" HorizontalAlignment="Left" Width="136"/>

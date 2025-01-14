@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="plik.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="plik.png" />
+  </ItemGroup>
+
 </Project>

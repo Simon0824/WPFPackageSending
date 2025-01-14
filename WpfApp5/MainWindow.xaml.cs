@@ -36,5 +36,23 @@ namespace WpfApp5
                 cena.Text = "Cena: 1zl"; 
             }
         }
+
+        private void zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            int wynik;
+                bool czyliczba = int.TryParse(kod.Text, out wynik);
+            if (!czyliczba)
+            {
+                MessageBox.Show("kod pocztowy nie składa się wyłacznie z liczb");
+            }
+            else if (kod.Text.Length != 5)
+            {
+                MessageBox.Show("kod nie zawiera 5 liczb");
+            }
+            else
+            {
+                MessageBox.Show("Poprawnie");
+            }
+        }
     }
 }
