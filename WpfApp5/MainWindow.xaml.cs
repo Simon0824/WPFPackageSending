@@ -18,7 +18,23 @@ namespace WpfApp5
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();//
+        }
+
+        private void sprawdz_Click(object sender, RoutedEventArgs e)
+        {
+            if (paczka.IsChecked == true)
+            {
+                cena.Text = "Cena: 10zl";
+            }
+            else if (list.IsChecked == true)
+            {
+                cena.Text = "Cena: 1,5zl";
+            }
+            else if (pocztowka.IsChecked == true)
+            {
+                cena.Text = "Cena: 1zl";
+            }
         }
     }
 }

@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <GroupBox Header="Rodzaj przesylki" Margin="25,46,563,271">
+            <StackPanel Height="77">
+                <RadioButton x:Name="paczka" Content="Paczka" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" Width="106" Margin="10,0,0,0"/>
+                <RadioButton x:Name="list" Content="List" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" Width="106" Margin="10,0,0,0"/>
+                <RadioButton x:Name="pocztowka" Content="Pocztówka" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" Width="106" Margin="10,0,0,0"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="sprawdz" Content="Sprawdź cenę" HorizontalAlignment="Left" Margin="25,179,0,0" VerticalAlignment="Top" Width="212" Click="sprawdz_Click"/>
+        <Image x:Name="zdj" HorizontalAlignment="Left" Height="64" Margin="63,246,0,0" VerticalAlignment="Top" Width="100" Source="/plik.JPG"/>
+        <TextBlock x:Name="cena" FontWeight="Bold" HorizontalAlignment="Left" Margin="200,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64"><Run Language="pl-pl" Text="Cena: "/></TextBlock>
+        <Button x:Name="zatwierdz" Content="Zatwierdź" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Width="524" Click="Button_Click"/>
+        <GroupBox Header="Dane adresowe" Margin="363,21,37,196">
+            <StackPanel>
+                <TextBlock x:Name="ulicalabel" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Ulica z numerami" Height="23" HorizontalAlignment="Left" Width="136"/>
+                <TextBox x:Name="ulica"  HorizontalAlignment="Left" Width="362" ></TextBox>
+                <TextBlock x:Name="kodlabel" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Kod pocztowy" Height="23" HorizontalAlignment="Left" Width="136"/>
+                <TextBox x:Name="kod"  HorizontalAlignment="Left" Width="362" ></TextBox>
+                <TextBlock x:Name="miastolabel" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Miasto" Height="23" HorizontalAlignment="Left" Width="136"/>
+                <TextBox x:Name="miasto"  HorizontalAlignment="Left" Width="362" Height="88" ></TextBox>
+            </StackPanel>
+        </GroupBox>
 
     </Grid>
 </Window>
